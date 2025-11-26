@@ -40,7 +40,8 @@ const Navbar = () => {
               <div className="pt-4">
                 <Button
                   className="!bg-transparent text-[#D83A56]"
-                  onClick={() => {
+                  onClick={async () => {
+                    await fetch('/api/logout', { method: 'POST' });
                     localStorage.removeItem('currentUser');
                     window.location.href = '/auth/login';
                   }}

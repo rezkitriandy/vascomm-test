@@ -39,7 +39,8 @@ const Navbar = () => {
           <>
             <Button
               variant="outline"
-              onClick={() => {
+              onClick={async () => {
+                await fetch('/api/logout', { method: 'POST' });
                 localStorage.removeItem('currentUser');
                 window.location.href = '/';
               }}

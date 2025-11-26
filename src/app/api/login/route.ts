@@ -18,7 +18,11 @@ export async function POST(request: Request) {
   const response = NextResponse.json({ success: true, user });
   response.cookies.set(
     'currentUser',
-    JSON.stringify({ email: user.email, name: user.name }),
+    JSON.stringify({
+      email: user.email,
+      name: user.name,
+      isAdmin: user.isAdmin,
+    }),
     {
       httpOnly: false,
       path: '/',
