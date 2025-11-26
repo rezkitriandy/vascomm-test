@@ -54,8 +54,8 @@ const LoginForm = () => {
     <form onSubmit={handleSubmit(handleLogin)}>
       <div className="w-[382px] space-y-8">
         <div className="space-y-2">
-          <h3 className="text-text-primary-black text-2xl">Selamat Datang</h3>
-          <p className="text-text-secondary text-xs">
+          <h3 className="text-2xl text-text-primary-black">Selamat Datang</h3>
+          <p className="text-xs text-text-secondary">
             Silahkan masukkan email atau nomor telepon dan password Anda untuk
             mulai menggunakan aplikasi
           </p>

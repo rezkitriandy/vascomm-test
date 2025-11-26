@@ -12,8 +12,8 @@ const ProductCard = () => {
         />
       </div>
       <div>
-        <h3 className="text-primary-black text-sm font-bold">Euodia</h3>
-        <h3 className="text-primary-blue text-sm font-bold">IDR x.xxx.980</h3>
+        <h3 className="text-sm font-bold text-primary-black">Euodia</h3>
+        <h3 className="text-sm font-bold text-primary-blue">IDR x.xxx.980</h3>
       </div>
     </div>
   );

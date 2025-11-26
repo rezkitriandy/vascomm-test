@@ -10,7 +10,7 @@ import {
 const LatestProducts = () => {
   return (
     <div className="space-y-8">
-      <h1 className="text-primary-black text-2xl font-bold">Terbaru</h1>
+      <h1 className="text-2xl font-bold text-primary-black">Terbaru</h1>
       <div>
         <Carousel>
           <CarouselContent>
