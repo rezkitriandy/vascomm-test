@@ -13,11 +13,10 @@ export function middleware(request: NextRequest) {
 
     try {
       const user = JSON.parse(userCookie.value);
-
       if (!user.isAdmin) {
         return NextResponse.redirect(new URL('/403', request.url));
       }
-    } catch (error) {
+    } catch {
       return NextResponse.redirect(new URL('/auth/login', request.url));
     }
   }
