@@ -34,11 +34,14 @@ const UserList = () => {
 
   const columns: ColumnDef<IUser>[] = [
     {
-      accessorKey: 'id',
+      // accessorKey: 'id',
       header: 'No',
       enableSorting: false,
-      cell: ({ row }) => {
-        return row.index + 1;
+      cell: ({ row, table }) => {
+        return (
+          (table.getSortedRowModel()?.rows?.findIndex((r) => r.id === row.id) ||
+            0) + 1
+        );
       },
     },
     {
