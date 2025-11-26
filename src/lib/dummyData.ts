@@ -45,7 +45,7 @@ export const products = [
     image: '/surface7.png',
     name: 'Microsoft Surface 7',
     createdAt: dayjs(),
-    price: 7000000,
+    price: 2500000,
     isActive: true,
   },
   {
@@ -53,7 +53,7 @@ export const products = [
     image: '/surface7.png',
     name: 'Microsoft Surface 7 Pro',
     createdAt: dayjs().add(3, 'd'),
-    price: 7000000,
+    price: 3000000,
     isActive: false,
   },
   {
@@ -61,7 +61,7 @@ export const products = [
     image: '/surface7.png',
     name: 'Microsoft Surface 7 Max',
     createdAt: dayjs().add(2, 'd'),
-    price: 7000000,
+    price: 4000000,
     isActive: true,
   },
   {
@@ -69,7 +69,7 @@ export const products = [
     image: '/surface7.png',
     name: 'Microsoft Surface 7 Lite',
     createdAt: dayjs().add(3, 'd'),
-    price: 7000000,
+    price: 5500000,
     isActive: true,
   },
 ];
