@@ -34,9 +34,15 @@ const LoginForm = () => {
         body: JSON.stringify(values),
       });
       const data: IApiResponse = await res.json();
+      const {
+        user: { email, name, isAdmin },
+      } = data;
 
       if (res.ok) {
-        localStorage.setItem('currentUser', JSON.stringify(data.user));
+        localStorage.setItem(
+          'currentUser',
+          JSON.stringify({ name, email, isAdmin }),
+        );
         if (data.user.isAdmin) {
           window.location.href = '/dashboard';
         } else {
